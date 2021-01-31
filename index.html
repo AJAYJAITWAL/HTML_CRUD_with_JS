@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Html CRUD 
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<h1>HTML CRUD Operation</h1>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Id</label><label class="validation-error hide" id="idValidationError">This field is required.</label>
+                        <input type="number" name="id" id="id">
+                    </div>
+                    <div>
+                        <label>Title</label>
+                        <input type="text" name="title" id="title">
+                    </div>
+                    <div>
+                        <label>Text</label>
+                        <input type="text" name="text" id="text">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="posts">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Title</th>
+                            <th>Text</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
